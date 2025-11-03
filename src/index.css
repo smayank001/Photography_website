@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Light Theme - Blue and White */
+    --background: 0 0% 100%; /* White */
+    --foreground: 220 30% 15%; /* Dark Blue */
+
+    --card: 0 0% 98%; /* Light Gray */
+    --card-foreground: 220 30% 15%; /* Dark Blue */
+
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 220 30% 15%; /* Dark Blue */
+
+    --primary: 220 80% 50%; /* Blue */
+    --primary-foreground: 0 0% 100%; /* White */
+
+    --secondary: 220 30% 90%; /* Light Blue Gray */
+    --secondary-foreground: 220 30% 15%; /* Dark Blue */
+
+    --muted: 220 20% 90%; /* Light Gray */
+    --muted-foreground: 220 10% 40%; /* Medium Gray */
+
+    --accent: 220 80% 50%; /* Blue */
+    --accent-foreground: 0 0% 100%; /* White */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%; /* White */
+
+    --border: 220 20% 85%; /* Light Blue Gray */
+    --input: 220 20% 85%; /* Light Blue Gray */
+    --ring: 220 80% 50%; /* Blue */
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --blue-dark: 220 80% 30%;
+    --blue-medium: 220 80% 50%;
+    --blue-light: 220 80% 80%;
+    --white: 0 0% 100%;
+    --gray-light: 220 20% 95%;
+  }
+
+  .dark {
+    /* Luxury Photography Theme - Deep Navy + Gold */
+    --background: 220 30% 8%;
+    --foreground: 40 100% 96%;
+
+    --card: 220 28% 12%;
+    --card-foreground: 40 100% 96%;
+
+    --popover: 220 30% 10%;
+    --popover-foreground: 40 100% 96%;
+
+    --primary: 43 96% 56%; /* Luxury Gold */
+    --primary-foreground: 220 30% 8%;
+
+    --secondary: 220 25% 18%;
+    --secondary-foreground: 40 100% 96%;
+
+    --muted: 220 20% 20%;
+    --muted-foreground: 40 20% 65%;
+
+    --accent: 43 96% 56%;
+    --accent-foreground: 220 30% 8%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 40 100% 96%;
+
+    --border: 220 20% 25%;
+    --input: 220 20% 25%;
+    --ring: 43 96% 56%;
+    
+    --sidebar-background: 220 28% 12%;
+    --sidebar-foreground: 40 100% 96%;
+    --sidebar-primary: 43 96% 56%;
+    --sidebar-primary-foreground: 220 30% 8%;
+    --sidebar-accent: 220 25% 18%;
+    --sidebar-accent-foreground: 40 100% 96%;
+    --sidebar-border: 220 20% 25%;
+    --sidebar-ring: 43 96% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent;
+  }
+
+  .luxury-shadow {
+    box-shadow: 0 10px 40px -10px hsl(var(--primary) / 0.3);
+  }
+
+  .hover-glow {
+    transition: all 0.3s ease;
+  }
+
+  .hover-glow:hover {
+    box-shadow: 0 0 30px hsl(var(--primary) / 0.4);
+  }
+}
