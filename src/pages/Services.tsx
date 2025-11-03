@@ -141,7 +141,13 @@ const Services = () => {
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Professional photography services tailored for every special
-              occasion in your life.
+              occasion in your life. For bookings, call us at{" "}
+              <a
+                href="tel:+918076911984"
+                className="text-primary hover:underline"
+              >
+                +91 80769 11984
+              </a>
             </p>
           </div>
 

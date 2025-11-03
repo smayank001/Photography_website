@@ -162,7 +162,11 @@ const Home = () => {
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
               Let's create timeless memories together. Book your photography
-              session today.
+              session today. Book us{" "}
+              <a
+                href="tel:+918076911984"
+                className="text-primary hover:underline"
+              ></a>
             </p>
             <Link to="/booking">
               <Button

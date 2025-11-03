@@ -65,7 +65,7 @@ ${formData.venue ? `Venue: ${formData.venue}` : ""}
 ${formData.message ? `Additional Details: ${formData.message}` : ""}`;
 
     // Replace with your actual WhatsApp number (include country code without + or 00)
-    const whatsappNumber = "1234567890"; // Example: 1234567890
+    const whatsappNumber = "918076911984";
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
 
@@ -114,7 +114,7 @@ ${formData.message ? `Additional Details: ${formData.message}` : ""}`;
                 <Input
                   id="phone"
                   type="tel"
-                  placeholder="+1 (234) 567-8900"
+                  placeholder="+91 80769 11984"
                   value={formData.phone}
                   onChange={(e) =>
                     setFormData({ ...formData, phone: e.target.value })

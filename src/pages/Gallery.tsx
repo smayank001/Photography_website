@@ -90,7 +90,13 @@ const Gallery = () => {
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Explore our collection of captured moments across various events
-              and celebrations.
+              and celebrations. For bookings, call us at{" "}
+              <a
+                href="tel:+918076911984"
+                className="text-primary hover:underline"
+              >
+                +91 80769 11984
+              </a>
             </p>
           </div>
 

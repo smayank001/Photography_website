@@ -238,7 +238,7 @@ const CameraDroneRental = () => {
   ];
 
   const handleBookNow = (equipment: Equipment) => {
-    const phoneNumber = "+919876543210"; // Replace with actual phone number
+    const phoneNumber = "+918076911984"; // Replace with actual phone number
     const message = `Hello! I'd like to rent the following equipment:%0AEquipment: ${equipment.name}%0ADuration: ${duration}%0APickup Date: ${pickupDate}%0AMy Name: %3CUser_Name%3E%0AContact: %3CUser_Phone%3E%0ALocation: %3CCity%3E`;
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
   };

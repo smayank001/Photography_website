@@ -144,6 +144,16 @@ const About = () => {
                   <span>Gimbal stabilizers for smooth cinematic videos</span>
                 </li>
               </ul>
+              <p className="text-muted-foreground leading-relaxed">
+                For bookings and inquiries, contact us at{" "}
+                <a
+                  href="tel:+918076911984"
+                  className="text-primary hover:underline"
+                >
+                  +91 80769 11984
+                </a>
+                .
+              </p>
             </div>
             <div className="animate-slide-in order-1 md:order-2">
               <img

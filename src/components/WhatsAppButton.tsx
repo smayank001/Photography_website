@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 const WhatsAppButton = () => {
   const handleWhatsAppClick = () => {
     // Replace with your actual WhatsApp number
-    const whatsappNumber = "1234567890";
+    const whatsappNumber = "918076911984";
     const message = encodeURIComponent(
       "Hi! I'd like to inquire about your photography services."
     );

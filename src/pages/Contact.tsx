@@ -17,15 +17,15 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone",
-      value: "+1 (234) 567-890",
-      link: "tel:+1234567890",
+      value: "+91 8076911984",
+      link: "tel:+918076911984",
       description: "Mon-Sat, 9AM-8PM",
     },
     {
       icon: MessageCircle,
       title: "WhatsApp",
       value: "Quick Response",
-      link: "https://wa.me/1234567890",
+      link: "https://wa.me/918076911984",
       description: "Chat with us instantly",
     },
     {
@@ -202,7 +202,7 @@ const Contact = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="https://wa.me/1234567890"
+                  href="https://wa.me/918076911984"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -214,7 +214,7 @@ const Contact = () => {
                     Message on WhatsApp
                   </Button>
                 </a>
-                <a href="tel:+1234567890">
+                <a href="tel:+918076911984">
                   <Button
                     size="lg"
                     variant="outline"
